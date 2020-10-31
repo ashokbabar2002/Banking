@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.Banking.utilities.Reporting"/>
+  </listeners>
+  <test name="Banking Test(failed)" parallel="none">
+    <classes>
+      <class name="com.Banking.Testcases.LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="contact_us"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.Banking.Testcases.LoginTest -->
+    </classes>
+  </test> <!-- Banking Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

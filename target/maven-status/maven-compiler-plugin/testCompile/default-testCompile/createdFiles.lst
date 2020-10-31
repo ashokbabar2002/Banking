@@ -1,0 +1,6 @@
+com\Banking\Testcases\BaseTest.class
+com\Banking\Pages\LoginPage.class
+com\Banking\Testcases\LoginTest.class
+com\Banking\utilities\ExcelReader.class
+com\Banking\utilities\Reporting.class
+com\Banking\utilities\Screenshots.class
