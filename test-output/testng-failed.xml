@@ -5,8 +5,8 @@
     <classes>
       <class name="com.Banking.Testcases.LoginTest">
         <methods>
+          <include name="logintest" invocation-numbers="0"/>
           <include name="teardown"/>
-          <include name="contact_us"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- com.Banking.Testcases.LoginTest -->

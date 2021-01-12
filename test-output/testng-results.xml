@@ -2,31 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="152554" started-at="2020-10-30T07:41:45Z" finished-at="2020-10-30T07:44:18Z">
+  <suite name="Suite" duration-ms="92357" started-at="2021-01-10T03:42:43Z" finished-at="2021-01-10T03:44:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="152554" started-at="2020-10-30T07:41:45Z" finished-at="2020-10-30T07:44:18Z">
+    <test name="Banking Test" duration-ms="92357" started-at="2021-01-10T03:42:43Z" finished-at="2021-01-10T03:44:15Z">
       <class name="com.Banking.Testcases.LoginTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56]" name="initialize" is-config="true" duration-ms="15289" started-at="2020-10-30T13:11:45Z" finished-at="2020-10-30T13:12:00Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183]" name="initialize" is-config="true" duration-ms="23498" started-at="2021-01-10T09:12:43Z" finished-at="2021-01-10T09:13:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="contact_us()[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56]" name="contact_us" duration-ms="72387" started-at="2020-10-30T13:12:00Z" finished-at="2020-10-30T13:13:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contact_us -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56]" name="teardown" is-config="true" duration-ms="14" started-at="2020-10-30T13:13:13Z" finished-at="2020-10-30T13:13:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=contact_us status=SUCCESS method=LoginTest.contact_us()[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56]" name="logintest" duration-ms="64801" started-at="2020-10-30T13:13:13Z" data-provider="getdata" finished-at="2020-10-30T13:14:18Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183]" name="login" duration-ms="55291" started-at="2021-01-10T09:13:07Z" data-provider="getdata" finished-at="2021-01-10T09:14:02Z">
           <params>
             <param index="0">
               <value>
@@ -41,19 +26,38 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56]" name="teardown" is-config="true" duration-ms="0" started-at="2020-10-30T13:14:18Z" finished-at="2020-10-30T13:14:18Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183]" name="teardown" is-config="true" duration-ms="2" started-at="2021-01-10T09:14:02Z" finished-at="2021-01-10T09:14:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String, java.lang.String)[pri:0, instance:com.Banking.Testcases.LoginTest@4667ae56] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login(java.lang.String, java.lang.String)[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="contact_us()[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183]" name="contact_us" duration-ms="12332" started-at="2021-01-10T09:14:02Z" finished-at="2021-01-10T09:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact_us -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183]" name="teardown" is-config="true" duration-ms="0" started-at="2021-01-10T09:14:15Z" finished-at="2021-01-10T09:14:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contact_us status=SUCCESS method=LoginTest.contact_us()[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Banking.Testcases.LoginTest@19d37183]" name="closeBrowser" is-config="true" duration-ms="469" started-at="2021-01-10T09:14:15Z" finished-at="2021-01-10T09:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.Banking.Testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Banking Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -11,6 +11,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -47,9 +48,19 @@ public class BaseTest {
 			}
 	//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println(driver);
+		driver.get(ps.getProperty("URL"));
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+		logger.info("url launched");
 		return driver;
 		//return null;
 		}
+	
+	@AfterClass
+	public void closeBrowser() {
+		driver.close();
+	}
+	
 
 	}
 

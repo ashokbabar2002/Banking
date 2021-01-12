@@ -17,16 +17,8 @@ import com.Banking.utilities.Screenshots;
 public class LoginTest extends BaseTest{
 	
 	@Test(dataProvider="getdata")
-	public void logintest(String username,String password) throws Exception {
+	public void login(String username,String password) throws Exception {
 		driver = initialize();	
-		driver.get("http://automationpractice.com/");
-		driver.manage().window().maximize();
-		Thread.sleep(5000);
-		logger.info("url launched");		
-		
-		//String username = ps.getProperty("username");
-		//String password = ps.getProperty("password");
-		
 		LoginPage lp = new LoginPage(driver);
 		
 		lp.clickLoginbtn().click();		
@@ -70,9 +62,15 @@ public class LoginTest extends BaseTest{
 		Assert.assertEquals(contact_us_title, "Contact us - My Store");
 		
 	}
+	
+	@Test
+	public void create_Account() {
+		
+	}
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 		if(result.getStatus()==2) {
+			
 			Screenshots.capturescreen(BaseTest.driver, result.getTestName());
 		}
 	}	

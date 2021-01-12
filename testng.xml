@@ -7,7 +7,13 @@
  
   <test name="Banking Test">
       <classes>
-      <class name="com.Banking.Testcases.LoginTest"/>
-    </classes>
+     	 <class name="com.Banking.Testcases.LoginTest">
+     	 <methods>
+       			 <include name="login" />
+        	 	 <include name="contact_us" />
+        	</methods>
+     		 
+         </class><!-- close tag should be here-->
+     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
